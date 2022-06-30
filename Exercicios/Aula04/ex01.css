@@ -1,0 +1,15 @@
+*{
+    font: Arial;
+}
+
+body{
+    background-color: gray;
+}
+
+h1{
+    color:rgb(0, 0, 80)
+}
+
+p{
+    font-size: 1.3rem;
+}
