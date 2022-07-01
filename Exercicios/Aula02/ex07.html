@@ -12,28 +12,32 @@
 <body>
     <section>
         <h1>Cadastro de usuário</h1>
-        <form action="">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" placeholder="Digite seu nome">
-            <br>
-            <label for="sobronme">Sobrenome</label>
-            <input type="text" id="sobrenome" placeholder="Digite seu sobrenome">
-            <br>
-            <label for="data-nascimento">Data de nascimento</label>
-            <input type="date" id="data-nascimento" placeholder="Digite sua data de nascimento">
-            <br>
-            <label for="email">E-mail</label>
-            <input type="email" id="email" placeholder="Digite seu e-mail">
-            <br>
-            <label for="password">Senha</label>
-            <input type="text" name="password" id="password" placeholder="Digite sua senha">
-            <br>
-            <div class="confirm">
-                <input type="checkbox" name="termos" id="termos-de-uso">
-                <label for="termos-de-uso">Aceito os Termos de uso</label>
+        <form>
+            <div class="campos">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Digite seu nome">
+                <br>
+                <label for="sobronme">Sobrenome</label>
+                <input type="text" id="sobrenome" placeholder="Digite seu sobrenome">
+                <br>
+                <label for="data-nascimento">Data de nascimento</label>
+                <input type="date" id="data-nascimento" placeholder="Digite sua data de nascimento">
+                <br>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail">
+                <br>
+                <label for="password">Senha</label>
+                <input type="text" name="password" id="password" placeholder="Digite sua senha">
                 <br>
             </div>
-            <button type="submit">Cadastrar</button>
+            <div class="confirm">
+                <input type="checkbox" name="termos" id="termos-de-uso">
+                <label for="termos-de-uso">Aceito os Termos de uso.</label>
+                <br>
+            </div>
+            <div class="botao">
+                <button type="submit">Cadastrar</button>
+            </div>
         </form>
     </section>
 </body>

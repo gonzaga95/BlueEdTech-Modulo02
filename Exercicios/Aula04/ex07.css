@@ -12,7 +12,6 @@ body {
     padding: 2rem 4rem;
     display: flex;
     justify-content: center;
-    background: rgb(63,94,251);
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(153,58,212,1) 100%);
 }
 
@@ -29,8 +28,44 @@ h1 {
     display: flex;
     justify-content: center;
     color: beige;
+    text-shadow: 0.1em 0.1em 0.2em black
+}
+
+.campos input {
+    margin: 0.4rem 0;
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+    color: beige;
+    text-shadow: 0.1em 0.1em 0.2em black
 }
 
 .confirm {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
+}
+
+.confirm label {
+    font-weight: normal;
+    margin-left: 0.2rem;
+}
+
+.botao {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0.5rem;
+}
+
+.botao button {
+    margin-top: 1rem;
+    padding: .2rem .4rem;
+    border-radius: 10px;
+}
+
+.botao button:hover {
+    font-weight: bold;
+    margin-top: 1rem;
+    padding: .2rem .4rem;
+    border-radius: 10px;
 }
