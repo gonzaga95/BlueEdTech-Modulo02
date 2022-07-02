@@ -6,3 +6,85 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+aside {
+    background: #e5e5e5;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+section.welcome {
+    display: flex;
+}
+
+section h2 {
+    font-family: "Merriweather";
+    font-weight: 400;
+    font-size: 16px;
+}
+
+section h1 {
+    font-family: "Merriweather";
+    font-weight: 700;
+    font-size: 26px;
+}
+
+section p {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+form .columns {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+form .lado-lado {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (max-width: 980px) {
+    body {
+        height: 100vh;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    aside {
+        background: #e5e5e5;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+}
