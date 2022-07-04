@@ -9,7 +9,6 @@
 body {
     height: 100vh;
     display: flex;
-    justify-content: center;
 }
 
 aside {
@@ -23,9 +22,20 @@ aside {
 section {
     width: 50%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    /* justify-content: space-between; */
     flex-flow: column wrap;
+    padding: 10rem 8rem;
+}
+
+section.texto-final {
+    justify-self: flex-end;
+}
+
+.centro {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 section.welcome {
@@ -44,15 +54,8 @@ section h1 {
     font-size: 26px;
 }
 
-section p {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
 form .columns {
     display: flex;
-    align-items: center;
     flex-flow: column wrap;
 }
 
