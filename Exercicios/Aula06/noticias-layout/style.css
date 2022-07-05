@@ -46,6 +46,8 @@ section#page-four {
     grid-template-rows: auto;
     padding: 3rem;
     gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 section#page-four article div {
