@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 'Inter', Arial, sans-serif;
+    font-size: "Inter", Arial, sans-serif;
 }
 
 body {
@@ -26,7 +26,7 @@ nav {
     align-items: center;
 }
 
-nav a {
+a {
     text-decoration: none;
     color: black;
     font-size: 1.5rem;
@@ -38,14 +38,15 @@ nav div#search {
     justify-content: center;
     width: 40%;
     align-items: center;
+    position: relative;
 }
 
 nav div#search input {
     outline: none;
     width: 100%;
     padding: 8px 24px;
-    font-size: 1.2rem;
-    border-radius: 3px;
+    font-size: 1rem;
+    border-radius: 4px;
     border: none;
     background-color: #ebebeb;
 }
@@ -56,7 +57,7 @@ nav div#search input {
 }
 
 button {
-    background-color: #3772FF;
+    background-color: #3772ff;
     color: #fff;
     border: none;
     outline: none;
@@ -139,7 +140,6 @@ section#line-three div#banners img {
 
 section#line-three div#text {
     grid-column: 3 / 4;
-
 }
 
 section#line-three div#text h2 {
@@ -147,4 +147,68 @@ section#line-three div#text h2 {
     font-weight: 500;
     width: 55%;
     padding-bottom: 2rem;
+}
+
+section#line-four {
+    grid-column: 1 / 4;
+    grid-row: 4;
+    margin-top: 3rem;
+}
+
+section#line-four h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+section#line-four div#artists-group {
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section#line-four div#artists-group .artist {
+    display: flex;
+    position: relative;
+}
+
+section#line-four div#artists-group .artists p {
+    position: absolute;
+    color: #f9f9f9;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+section#line-four div#artists-group .artists span {
+    color: #ebebeb;
+    position: absolute;
+    font-weight: 500;
+    font-size: 0.7rem;
+    left: 20px;
+    top: 42px;
+}
+
+section#line-four div#artists-group .artists img {
+    width: 100%;
+}
+
+footer {
+    grid-column: 1 / 4;
+    grid-row: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+footer ul {
+    display: flex;
+}
+
+footer ul li {
+    list-style: none;
+    font-size: 1rem;
+    padding-left: 4.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
 }
