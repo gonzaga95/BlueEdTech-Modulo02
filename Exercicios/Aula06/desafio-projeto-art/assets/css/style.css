@@ -41,7 +41,7 @@ nav div#search {
     position: relative;
 }
 
-nav div#search input {
+input {
     outline: none;
     width: 100%;
     padding: 8px 24px;
@@ -211,4 +211,22 @@ footer ul li {
     padding-left: 4.5rem;
     font-weight: 500;
     text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+    body {
+        display: block;
+        padding: 1.5rem;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #search {
+        display: none;
+    }
+    
 }
