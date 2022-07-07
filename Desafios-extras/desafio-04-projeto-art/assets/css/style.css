@@ -33,7 +33,7 @@ a {
     font-weight: 600;
 }
 
-nav div#search {
+#search {
     display: flex;
     justify-content: center;
     width: 40%;
@@ -42,8 +42,8 @@ nav div#search {
 }
 
 input {
-    outline: none;
     width: 100%;
+    outline: none;
     padding: 8px 24px;
     font-size: 1rem;
     border-radius: 4px;
@@ -52,8 +52,11 @@ input {
 }
 
 .bi-search {
-    top: 1;
     color: #737373;
+    top: 1;
+    position: absolute;
+    right: 24px;
+    background-color: transparent;
 }
 
 button {
@@ -106,6 +109,7 @@ header section ul {
 }
 
 header section ul li {
+    padding: 2rem;
     list-style: none;
 }
 
@@ -167,28 +171,30 @@ section#line-four div#artists-group {
     justify-content: space-between;
 }
 
-section#line-four div#artists-group .artist {
+section#line-four .artists {
     display: flex;
     position: relative;
 }
 
-section#line-four div#artists-group .artists p {
+section#line-four .artists p {
     position: absolute;
     color: #f9f9f9;
     font-size: 1.3rem;
     font-weight: 600;
+    top: 15px;
+    left: 20px;
 }
 
-section#line-four div#artists-group .artists span {
+section#line-four .artists span {
     color: #ebebeb;
     position: absolute;
     font-weight: 500;
     font-size: 0.7rem;
-    left: 20px;
     top: 42px;
+    left: 20px;
 }
 
-section#line-four div#artists-group .artists img {
+section#line-four .artists img {
     width: 100%;
 }
 
@@ -228,5 +234,4 @@ footer ul li {
     #search {
         display: none;
     }
-    
 }
