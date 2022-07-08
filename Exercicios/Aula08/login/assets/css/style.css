@@ -19,6 +19,7 @@ html {
 
 section {
     display: flex;
+    justify-content: center;
     background-color: #fff;
     padding: 2rem;
     border-radius: 1rem;
