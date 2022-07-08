@@ -14,12 +14,91 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: lightskyblue;
 }
 
 section {
-    
+    display: flex;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: grey 0 3px 5px;
+    gap: 3rem;
 }
 
 img {
-    width: 400px;
+    width: 30vw;
+}
+
+#title {
+    color: lightskyblue;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+#form-login {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: #949494;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+}
+
+input {
+    width: 100%;
+    border: solid 1px #ccc;
+    padding: 0.5rem .1rem;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+input:focus {
+    border: lightskyblue 1px solid;
+}
+
+button {
+    border: lightskyblue 1px solid;
+    outline: none;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    margin-bottom: 0.8rem;
+    transition: all 0.2s ease;
+}
+
+button[type="submit"] {
+    color: #fff;
+    background-color: lightskyblue;
+}
+
+button[type="submit"]:hover {
+    background-color: #fff;
+    color: lightskyblue;
+}
+
+button[type="reset"] {
+    background-color: #fff;
+    color: lightskyblue;
+}
+
+button[type="reset"]:hover {
+    color: #fff;
+    background-color: lightskyblue;
+}
+
+@media (max-width: 900px) {
+    #img-login{
+        display: none;
+    }
+
+    section {
+        width: 100%;
+        margin: 2rem;
+    }
 }

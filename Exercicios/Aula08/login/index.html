@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 08 - Tele login</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Aula 08 - Login</title>
 </head>
+
 <body>
 
     <section>
-        <img src="" alt="">
+        <img id="img-login" src="./assets/images/login-img.png" alt="Login em tela">
+
         <div>
-            <h1></h1>
-            <form action=""></form>
+            <h1 id="title">Entrar na plataforma</h1>
+
+            <form id="form-login">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password" placeholder="Digite sua senha">
+
+                <button type="submit">Entrar</button>
+
+                <button type="reset">Limpar</button>
+
+            </form>
         </div>
     </section>
-    
+
 </body>
+
 </html>
