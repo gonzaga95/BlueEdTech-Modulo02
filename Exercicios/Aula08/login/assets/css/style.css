@@ -93,6 +93,12 @@ button[type="reset"]:hover {
     background-color: lightskyblue;
 }
 
+span {
+    color: red;
+    font-size: .8rem;
+    margin-bottom: .5rem;
+}
+
 @media (max-width: 900px) {
     #img-login{
         display: none;
