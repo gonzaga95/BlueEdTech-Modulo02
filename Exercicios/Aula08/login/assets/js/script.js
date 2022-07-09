@@ -1,8 +1,11 @@
 const imagem = document.querySelector("#img-login");
+
 const inputEmail = document.querySelector("#email");
 const inputPassword = document.querySelector("#password");
 const spanAlertEmail = document.querySelector("#span-email");
 const spanAlertPassword = document.querySelector("#span-password");
+
+const botaoEntrar = document.querySelector("button[type='submit']");
 
 imagem.addEventListener("click", function () {
     if (imagem.src.includes("img1")) {
@@ -25,5 +28,15 @@ inputPassword.addEventListener("keyup", function () {
         spanAlertPassword.innerText = "A senha deve ter ao menos 8 caracteres.";
     } else {
         spanAlertPassword.innerText = "";
+    }
+});
+
+botaoEntrar.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    if (spanAlertPassword.childNodes.length != 0 || spanAlertEmail.childNodes.length != 0) {
+        alert("Preencha corretamente!");
+    } else {
+        alert("Seja bem-vinde!");
     }
 });
