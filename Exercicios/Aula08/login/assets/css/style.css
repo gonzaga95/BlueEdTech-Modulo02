@@ -35,7 +35,7 @@ img {
     color: lightskyblue;
     text-align: center;
     padding-bottom: 2rem;
-    text-shadow: 0 0.5px #949494;
+    text-shadow: .2px .2px #949494;
 }
 
 #form-login {
