@@ -35,6 +35,7 @@ img {
     color: lightskyblue;
     text-align: center;
     padding-bottom: 2rem;
+    text-shadow: 0 0.5px #949494;
 }
 
 #form-login {
@@ -51,7 +52,7 @@ label {
 input {
     width: 100%;
     border: solid 1px #ccc;
-    padding: 0.5rem .1rem;
+    padding: 0.5rem 0.1rem;
     font-size: 1rem;
     outline: none;
     border-radius: 0.2rem;
@@ -95,12 +96,12 @@ button[type="reset"]:hover {
 
 span {
     color: red;
-    font-size: .8rem;
-    margin-bottom: .5rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
 }
 
 @media (max-width: 900px) {
-    #img-login{
+    #img-login {
         display: none;
     }
 
