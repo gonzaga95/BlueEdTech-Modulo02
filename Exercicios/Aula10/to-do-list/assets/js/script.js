@@ -31,3 +31,11 @@ addBtn.addEventListener("click", function () {
         });
     }
 });
+
+const list = document.querySelector("#myUL");
+
+list.addEventListener("click", (event) => {
+    if (event.target.nodeName === "LI") {
+        event.target.classList.toggle("checked");
+    }
+});
