@@ -17,5 +17,79 @@ header {
     width: 100%;
     height: 20rem;
     padding: 3rem;
-    background-image: url("https://i.imgur.com/T02tmb2.jpg");
+    background-image: url("./background-header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header span {
+    background-color: #00002c;
+    width: 24rem;
+    height: 5rem;
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    border-radius: .3rem;
+}
+
+header h1 {
+    color: #f0ff00;
+    font-size: 3rem;
+    z-index: 1;
+}
+
+section#character-list {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+}
+
+.card {
+    display: flex;
+    background-color: #3C3E44;
+    height: 230px;
+    width: 560px;
+    border-radius: .5rem;
+    margin: 4px 0;
+}
+
+.image-character {
+    object-fit: cover;
+    object-position: center;
+    border-radius: .5rem 0 0 .5rem;
+}
+
+.card div {
+    padding: 1rem;
+}
+
+.name-character {
+    color: #ededed;
+}
+
+.spec-character {
+    padding-bottom: 10px;
+}
+
+.card h4 {
+    color: #a4a4a4;
+    padding: 5px 0;
+    font-weight: 400;
+}
+
+.card p {
+    color: #ededed;
+}
+
+footer {
+    width: 100%;
+    height: 3rem;
+    background-image: url('./background-header.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
 }
