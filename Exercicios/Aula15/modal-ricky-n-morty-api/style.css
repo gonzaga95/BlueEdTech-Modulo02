@@ -109,3 +109,72 @@ footer {
     background-position: bottom;
     background-size: cover;
 }
+
+/* Estilização do modal */
+
+section#modal-detalhes {
+    background-color: #00000090;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    display: flex;
+}
+
+#modal{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    min-height: 300px;
+    background-color: #3c3e44;
+    border-radius: 11px;
+    overflow: hidden;
+    position: relative;
+}
+
+#modal span#close-modal {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #a8a8a8a8;
+    padding: .5rem;
+    border-radius: 0 11px 0 11px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+#modal span#close-modal:hover {
+    background-color: #797979;
+}
+
+#modal-image {
+    object-fit: cover;
+    object-position: center;
+    border-radius: .5rem 0 0 .5rem;
+}
+
+#modal div {
+    padding: 1rem;
+}
+
+#modal h2 {
+    color: #ededed;
+    padding-bottom: 1rem;
+}
+
+#modal h4 {
+    color: #a4a4a4;
+    padding: 5px 0;
+    font-weight: 400;
+}
+
+#modal p {
+    color: #ededed;
+    padding-bottom: 1rem;
+}
