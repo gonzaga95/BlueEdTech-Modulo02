@@ -35,10 +35,11 @@ function viewMore(){
     getCharacters();
 }
 
-window.addEventListener('scroll', function () {
-    const {scrollTop, scrollHeight, clientHeight} = document.documentElement;
+// //Paginação infinitda
+// window.addEventListener('scroll', function () {
+//     const {scrollTop, scrollHeight, clientHeight} = document.documentElement;
 
-    if (scrollTop + clientHeight >= scrollHeight) {
-        viewMore();
-    }
-})
+//     if (scrollTop + clientHeight >= scrollHeight) {
+//         viewMore();
+//     }
+// })
