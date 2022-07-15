@@ -1,9 +1,17 @@
 let page = 1;
 
-async function getCharacters () {
-    const resposta = await fetch(`https://rickandmortyapi.com/api/character?page=${page}`);
+const modalImage = document.querySelector("#modal-image");
+const modalName = document.querySelector("#modal-name");
+const modalSpecies = document.querySelector("#modal-species");
+const modalGender = document.querySelector("#modal-gender");
+const modalOrigin = document.querySelector("#modal-origin");
+const modalLocation = document.querySelector("#modal-location");
+const modalStatus = document.querySelector("#modal-status");
 
-    const data = await resposta.json();
+async function getCharacters () {
+    const respostaPage = await fetch(`https://rickandmortyapi.com/api/character?page=${page}`);
+
+    const data = await respostaPage.json();
 
     data.results.forEach(character => {
         document.querySelector("#character-list").insertAdjacentHTML('beforeend', `
@@ -21,11 +29,30 @@ async function getCharacters () {
                 <h4>Origin</h4>
                 <p class="spec-character">${character.origin.name}</p>
 
+                <span class="id-character">${character.id}</span>
+
             </div>
 
         </div>
-        `)
-    })
+        `);
+    });
+
+    const cards = document.querySelectorAll(".card");
+
+    const modal = document.querySelector("#modal-detalhes");
+
+    cards.forEach((card) => {
+        card.addEventListener("click", function (event) {
+            const cardElement = event.path.filter((item) => item.className == "card");
+
+            const idCard = cardElement[0].children[0].children[6].innerHTML;
+            
+            const respostaId = await fetch (`https://rickandmortyapi.com/api/character/${idCard}`);
+
+            const data = await respostaId.json();
+        });
+    });
+
 }
 
 getCharacters();

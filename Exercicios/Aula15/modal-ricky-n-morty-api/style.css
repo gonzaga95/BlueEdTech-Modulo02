@@ -30,7 +30,7 @@ header span {
     position: absolute;
     left: 0;
     z-index: 0;
-    border-radius: .3rem;
+    border-radius: 0.3rem;
 }
 
 header h1 {
@@ -50,17 +50,17 @@ section#character-list {
 
 .card {
     display: flex;
-    background-color: #3C3E44;
+    background-color: #3c3e44;
     height: 230px;
     width: 560px;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     margin: 4px 0;
 }
 
 .image-character {
     object-fit: cover;
     object-position: center;
-    border-radius: .5rem 0 0 .5rem;
+    border-radius: 0.5rem 0 0 0.5rem;
 }
 
 .card div {
@@ -85,26 +85,30 @@ section#character-list {
     color: #ededed;
 }
 
+span.id-character {
+    display: none;
+}
+
 button#nextpage {
     display: flex;
     margin: 2rem auto;
-    background-color: #00002C;
+    background-color: #00002c;
     border: none;
     outline: none;
     color: #90ff05;
-    border-radius: .5rem;
-    padding: .6rem 3rem;
+    border-radius: 0.5rem;
+    padding: 0.6rem 3rem;
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 600;
-    transition: all .4s ease-in-out;
+    transition: all 0.4s ease-in-out;
     cursor: pointer;
 }
 
 footer {
     width: 100%;
     height: 3rem;
-    background-image: url('./background-header.jpg');
+    background-image: url("./background-header.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -112,7 +116,7 @@ footer {
 
 /* Estilização do modal */
 
-section#modal-detalhes {
+#modal-detalhes {
     background-color: #00000090;
     width: 100vw;
     height: 100vh;
@@ -123,10 +127,10 @@ section#modal-detalhes {
     justify-content: center;
     align-items: center;
     overflow-y: auto;
-    display: flex;
+    display: none;
 }
 
-#modal{
+#modal {
     width: 100%;
     max-width: 600px;
     height: auto;
@@ -143,10 +147,10 @@ section#modal-detalhes {
     top: 0;
     right: 0;
     background-color: #a8a8a8a8;
-    padding: .5rem;
+    padding: 0.5rem;
     border-radius: 0 11px 0 11px;
     cursor: pointer;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 #modal span#close-modal:hover {
@@ -156,7 +160,7 @@ section#modal-detalhes {
 #modal-image {
     object-fit: cover;
     object-position: center;
-    border-radius: .5rem 0 0 .5rem;
+    border-radius: 0.5rem 0 0 0.5rem;
 }
 
 #modal div {
