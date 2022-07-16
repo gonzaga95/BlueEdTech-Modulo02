@@ -13,7 +13,7 @@ async function getLocations() {
             "beforeend",
             `
         <div class="card">
-        <img class="planet" src="https://thumbs.dreamstime.com/b/mundo-terra-do-planeta-modelo-global-isolado-no-fundo-branco-elementos-desta-imagem-fornecidos-pela-nasa-136878303.jpg">
+        <img class="planet" src="https://cdn-0.imagensemoldes.com.br/wp-content/uploads/2020/06/Planeta-PNG.png">
         <h2>${location.name}</h2>
         
         <div class="details">
@@ -46,7 +46,7 @@ async function getLocations() {
 
         card.addEventListener("mouseleave", function (event) {
             getCardElemento(event).style.display = "none";
-        })
+        });
     });
 
     function getCardElemento(evento) {
@@ -59,3 +59,8 @@ async function getLocations() {
 }
 
 getLocations();
+
+function viewMore() {
+    page++;
+    getLocations();
+}
