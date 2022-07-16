@@ -7,13 +7,14 @@ const modalGender = document.querySelector("#modal-gender");
 const modalOrigin = document.querySelector("#modal-origin");
 const modalLocation = document.querySelector("#modal-location");
 const modalStatus = document.querySelector("#modal-status");
+const modalEpisode = document.querySelector("#modal-ep");
 
 async function getCharacters () {
     const respostaPage = await fetch(`https://rickandmortyapi.com/api/character?page=${page}`);
 
-    const data = await respostaPage.json();
+    const dataAll = await respostaPage.json();
 
-    data.results.forEach(character => {
+    dataAll.results.forEach( function (character) {
         document.querySelector("#character-list").insertAdjacentHTML('beforeend', `
         <div class="card">
             <img class="character" src="${character.image}"
@@ -35,22 +36,40 @@ async function getCharacters () {
 
         </div>
         `);
-    });
+    })
 
     const cards = document.querySelectorAll(".card");
 
     const modal = document.querySelector("#modal-detalhes");
 
     cards.forEach((card) => {
-        card.addEventListener("click", function (event) {
+        card.addEventListener("click", async function (event) {
             const cardElement = event.path.filter((item) => item.className == "card");
 
-            const idCard = cardElement[0].children[0].children[6].innerHTML;
+            const idCard = cardElement[0].children[1].children[6].innerHTML;
             
-            const respostaId = await fetch (`https://rickandmortyapi.com/api/character/${idCard}`);
+            const respostaId = await fetch(`https://rickandmortyapi.com/api/character/${idCard}`);
 
-            const data = await respostaId.json();
+            const dataCharacter = await respostaId.json();
+    
+            modal.style.display = "flex";
+    
+            modalImage.setAttribute("src", dataCharacter.image);
+            modalName.innerText = dataCharacter.name;
+            modalGender.innerText = dataCharacter.gender;
+            modalSpecies.innerText = dataCharacter.species;
+            modalOrigin.innerText = dataCharacter.origin.name;
+            modalLocation.innerText = dataCharacter.location.name;
+            modalStatus.innerText = dataCharacter.status;
+            modalEpisode.innerText = dataCharacter.episode.length;
         });
+        
+    });
+
+    window.addEventListener("click", function (event) {
+        if (!event.target.classList.contains("modal-item")){
+            modal.style.display = "none";
+        }
     });
 
 }

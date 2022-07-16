@@ -133,12 +133,13 @@ footer {
 #modal {
     width: 100%;
     max-width: 600px;
-    height: auto;
+    max-height: 90vh;
     min-height: 300px;
     background-color: #3c3e44;
     border-radius: 11px;
     overflow: hidden;
     position: relative;
+    overflow-y: auto;
 }
 
 #modal span#close-modal {
